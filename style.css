@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans');
+/* general stles*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Plus Jakarta Sans';
+}
+a {
+    text-decoration: none;
+    color: none;
+}
+.site-name, .intro h1, .courses h3 {
+    color: #13183F;
+}
+footer .site-name, button, .intro button, .check-box p {
+    color: #FFFFFF;
+}
+
+/* styles for header and it's elements */
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header span {
+    margin: 22px 0 0 16px;
+}
+.site-name {
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 800;
+}
+header button {
+    margin: 16px 16px 0 0;
+}
+header button:hover {
+    background-color:  #666CA3;
+}
+button:hover, .courses span:hover  {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: #13183F;
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    border-style: none;
+}
+/* styles for footer and it's elements */
+footer {
+    height: 120px;
+    background-color: #13183F;
+}
+footer .site-name {
+    margin: 43px 0 42px 16px;
+}
+footer .button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    margin: 36px 16px 36px 0;
+}
+footer .button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+.intro h1, .check-box p, .courses h3 {
+    font-weight: 800;
+}
+.intro p, .intro button, .courses p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* styles for section one introduction */
+.intro {
+    margin: 38px 16px 70px 16px;
+    max-width: 398px;
+
+}
+.intro h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.intro p {
+    margin-top: 26px;
+    font-weight: 500;
+    color:  #83869A;
+}
+.intro button {
+    font-weight: 700;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    border-style: none;
+    margin-top: 24px;
+    padding: 15px 38px;
+}
+.intro button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+#image-hero-mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 425px;
+    width: 100%;
+}
+/* styles for section two courses */
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.check-box {
+    width: 343px;
+    height: 120px;
+    margin: 0 16px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+}
+.check-box p {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 28px 24px 29px 32px;
+}
+.courses {
+    width: 343px;
+    height: 259px;
+    margin: 40px 16px 0 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+}
+.courses img {
+    margin: -24px 0 0 28px;
+}
+.courses h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 24px 0 0 28px;
+}
+.courses p {
+    font-weight: 500;
+    color: #83869A;
+    margin: 16px 28px 0 29px;
+}
+.courses span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    display: block;
+    margin: 24px 0 32px 28px;
+}
+.courses span:hover {
+    color: #FFA7C3;
+}
+
+
+/* media query for screen >=768px  */
+@media only screen and (min-width:768px) {
+    /* styles for footer and header and their elements */
+    header span {
+        margin: 31px 0 0 39px;
+    }
+    header button {
+        margin: 24px 40px 0 0;
+    }
+    footer .site-name {
+        margin-left: 40px;
+    }
+    footer .button {
+        margin-right: 39px;
+    } 
+     /*styles for section one, introduction  */
+    .intro {
+        display: inline-block;
+        margin: 99px 331px 186px 39px;
+    }
+    #image-hero-mobile {
+        display: none;
+    }
+    body {
+        background-image: url(starter-code/assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position-y: -94.23px;
+        background-position-x: calc(100% + 297.87px);
+        overflow: visible;
+    }
+}
+
+/* media query for screen >=750px  */
+@media only screen and (min-width:750px) {
+ /* styles for section two, courses */
+ .container div {
+    width: 339px;
+    height: 259px;
+    margin-top: 40px;
+ }
+ .check-box p {
+    padding: 56px 21px 139px 32px;
+ }
+} 
+
+
+/* media query for screen >=1440px  */
+@media only screen and (min-width:1440px) {
+    /* styles for footer and header and their elements */
+    .site-name {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    header span, footer .site-name {
+        margin-left: 165px;
+    }
+    header .button, footer .button {
+        margin-right: 165px;
+        font-size: 18px;
+    }
+    /*styles for section one, introduction  */
+    .intro {
+        max-width: 457px;
+        margin: 172px 818px 226px 165px;
+    }
+    .intro h1 {
+        font-size: 56px;
+        line-height: 71px;
+    }
+    .intro p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 29px;
+    }
+    .intro button {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 19px 31px 16px 32px;
+        margin-top: 40px;
+    }
+    body {
+        background-image: url(starter-code/assets/image-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: -148px;
+        background-position-x: calc(100% + 335.73px);
+        overflow: visible;
+    }
+    /* styles for section two, courses */
+    .container div {
+        width: 350px;
+        height: 322px;
+    }
+    .check-box p {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 64px 32px 138px 32px;
+    }
+    .courses h3{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 32px 0 0 32px
+    }
+    .courses p {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 24px 32px 0 32px;
+    }
+    .courses {
+        position: relative;
+    }
+    .courses span {
+        position:absolute;
+        top: 234px;
+    }
+}
