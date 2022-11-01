@@ -1,4 +1,4 @@
-# Frontend Mentor - Profile-card-component
+# Frontend Mentor - Skilled-elearning-landing-page
 
 This is a solution to the [Skilled-elearning-landing-page]
 
