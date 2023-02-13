@@ -11,10 +11,12 @@ a {
     text-decoration: none;
     color: none;
 }
-.site-name, .intro h1, .courses h3 {
+.site-name, .intro h1, 
+.courses h3 {
     color: #13183F;
 }
-footer .site-name, button, .intro button, .check-box p {
+footer .site-name, button, 
+.intro button, .check-box p {
     color: #FFFFFF;
 }
 
@@ -66,12 +68,16 @@ footer .button {
     margin: 36px 16px 36px 0;
 }
 footer .button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.5)), 
+        linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
-.intro h1, .check-box p, .courses h3 {
+.intro h1, .check-box p, 
+.courses h3 {
     font-weight: 800;
 }
-.intro p, .intro button, .courses p {
+.intro p, .intro button, 
+.courses p {
     font-size: 16px;
     line-height: 26px;
 }
@@ -100,7 +106,9 @@ footer .button:hover {
     padding: 15px 38px;
 }
 .intro button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.5)), 
+        linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 #image-hero-mobile {
     display: block;
